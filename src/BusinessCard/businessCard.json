@@ -1,0 +1,18 @@
+{
+    "business": {
+      "name": "Bailey Tax & Accounting",
+      "address": "1234 Ann Arbor St, Ann Arbor, MI 48103",
+      "phone": "555-555-5555",
+      "email": "info@business.com",
+      "website": "http://baileytaxaccount.com/",
+      "industry": "Financial Services",
+      "description": "Bailey Tax & Accounting is a full service tax, accounting and business consulting firm located in Ann Arbor, MI."
+    },
+    "owner": {
+      "firstName": "Shawn",
+      "lastName": "Bailey",
+      "phone": "555-555-5555",
+      "email": "bailey.shawn.d@gmail.com",
+      "calender": "https://calendly.com/shawn-bailey/30min"
+    }
+  }

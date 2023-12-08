@@ -10,7 +10,7 @@ const Navbar = () => {
         <>
             <header className="d-flex justify-content-center py-2">
                 <nav className='w-100 h-100 mr-0'>
-                    <span className="w-100 container-lg">
+                    <span className="w-100">
                         <button className="btaButton btn m-1" />
                         <div id='contactIcons' className='d-lg-flex w-100 justify-content-end'>
                             <PhoneButton />

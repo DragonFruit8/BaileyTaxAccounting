@@ -1,18 +1,24 @@
-
+import { owner } from '../../BusinessCard/businessCard';
 
 const PhoneButton = () => {
-    const phone = '+1(734) 333-3333';
+
+    const callNumber = () => {
+        window.location.href = `tel:${owner.phone}`;
+    }
+
     return (
         <>
-            <button className='btn contact-badge'>
-                <span>
-                    <i className="fa fa-phone"></i>
-                </span>
-                <span>
-                    <p className='text-white'>Phone</p>
-                    <p className='text-white'>{phone}</p>
-                </span>
-            </button>
+            <div className='btn contact-badge' >
+                <a className="w-100 d-flex flex-fill" onClick={callNumber}>
+                    <span>
+                        <i className="fa fa-phone"></i>
+                    </span>
+                    <span>
+                        <p className='text-white'>Phone</p>
+                        <p className='text-white'>{owner.phone}</p>
+                    </span>
+                </a>
+            </div>
         </>
     );
 }

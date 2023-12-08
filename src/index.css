@@ -52,6 +52,7 @@
     margin: 0;
     padding: 0;
     z-index: 0;
+    user-select: none;
 }
 main {
     display: flex;
@@ -59,12 +60,27 @@ main {
     justify-content: flex-end;
     align-items: center;
     min-width: 100% !important;
-    min-height: 75vh;
+    min-height: 65vh;
     margin: 0;
     padding: 0;
     background-color: #381B17;
     line-height: 3rem;
 
+}
+main > div{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100% !important;
+    min-height: 40vh;
+    top: 75px;
+    margin: 0;
+    padding: 0;
+    background-color: #381B17;
+    gap: 1rem;
+    
 }
 /* Font */
 
@@ -196,11 +212,24 @@ button.card:hover{
 
 #resourceGroup{
     display: flex;
+    min-height: 42vh;
     height: auto;
     flex-direction: column !important;
+    align-items: center;
     min-width: 100% !important;
     margin: 0 auto;
     padding: 0;
+}
+#copyMessage{
+    position: absolute;
+    left: 52%;
+    top: 70%;
+    width: fit-content;
+    border-radius: 10px;
+    background-color:  rgb(0, 63, 0);
+    padding: 3px 18px;
+    box-shadow: 0 0 5px 10px rgba(0, 255, 0, 0.4);
+    color: white;
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
@@ -244,8 +273,8 @@ button.card:hover{
         align-items: center;
         flex: 1 1 auto;
         margin: 0 auto;
-        height: 100%;
-        max-width: 400px !important;
+        /* height: 100%; */
+        /* max-width: 400px !important; */
     }
     main{
         display: flex;
@@ -258,6 +287,7 @@ button.card:hover{
         padding: 0;
         background-color: #381B17;
         line-height: 3rem;
+        user-select: none;
     }
     main + span{
         
@@ -295,8 +325,6 @@ button.card:hover{
         align-items: center;
         margin: 0 auto;
         height: 100%;
-        min-width: 80vw !important;
-        max-width: 400px !important;
     }
     #cardOption{
         display: inline-flex;

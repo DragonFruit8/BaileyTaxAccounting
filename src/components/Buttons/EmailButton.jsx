@@ -1,17 +1,19 @@
-
+import { owner } from '../../BusinessCard/businessCard';
 
 const EmailButton = () => {
-    
-    const email = 'info@BaileyTaxInc.com';
+
+    const sendEmail = () => {
+        window.location.href = `mailto:${owner.email}`;
+    }
     return (
         <>
-            <button className='btn contact-badge'>
+            <button id="sheen" className='btn contact-badge' onClick={sendEmail}>
                 <span>
                     <i className="fa fa-envelope"></i>
                 </span>
                 <span>
                     <p className='text-white'>Email</p>
-                    <p className='text-white'>{email}</p>
+                    <p className='text-white'>{owner.email}</p>
                 </span>
             </button>
         </>
