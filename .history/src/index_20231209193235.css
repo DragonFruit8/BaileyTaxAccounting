@@ -1,0 +1,397 @@
+:root{
+    --primary-color: #381B17;
+    --secondary-color: #000000;
+    --tertiary-color: #fff;
+
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --tertiary-font: 'Roboto', sans-serif;
+
+    --H1-A: 5rem;
+    --H1-B: 4.5rem;
+
+    --H2-A: 4.75rem;
+    --H2-B: 4.25rem;
+
+    --H3-A: 3.50rem;
+    --H3-B: 3rem;
+
+    --H4-A: 2.75rem;
+    --H4-B: 2.25rem;
+
+    --H4-A: 2.25rem;
+    --H4-B: 1.75rem;
+
+    --H5-A: 1.50rem;
+    --H5-B: 1.125rem;
+
+    --H6-A: 0.85rem;
+    --H6-B: 0.65rem;
+
+    --p-A: .75rem;
+    --p-B: 1rem;
+
+    --a-A: 0.75rem;
+    --a-B: 1rem;
+
+    --accent-color: #007bff;
+    --accent-color-hover: #0069d9;
+    --accent-color-active: #007bff;
+    --accent-color-disabled: #6c757d;
+    
+    --accent-secondary-color: #90480E;
+    --accent-secondary-color-hover: #67340a;
+    --accent-secondary-color-active: #90480E;
+    --accent-secondary-color-disabled: #67340a;
+
+}
+#root{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    user-select: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 100% !important;
+    min-height: 65vh;
+    margin: 0;
+    padding: 0;
+    background-color: #381B17;
+    line-height: 3rem;
+
+}
+main > div{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100% !important;
+    min-height: 40vh;
+    top: 75px;
+    margin: 0;
+    padding: 0;
+    background-color: #381B17;
+    gap: 1rem;
+    
+}
+/* Font */
+
+h1 {
+    font-size: var(--H1-A);
+    font-weight:lighter;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family: var(--primary-font);
+    color: white;
+}
+h2{
+    font-size: var(--H2-B);
+}
+
+h3{
+    font-size: var(--H3-B);
+    font-weight: 100;
+}
+h4{
+    font-size: var(--H4-B);
+}
+
+p{
+    font-size: var(--p-B);
+    font-weight: 100;
+    color: black;
+}
+a{
+    font-size: var(--a-B);
+    font-weight: bold;
+    transform: uppercase;
+    color: rgb(0, 0, 87);
+}
+a:hover{
+    color: rgb(1, 88, 131);
+    text-decoration: none;
+}
+
+/* Buttons */
+
+.btn.btn-primary{
+    display: flex;
+    border: white 4px solid !important;
+    background-color: transparent !important;
+    border-radius: 50px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    min-width: 400px;
+    min-height: 50px;
+    max-height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+
+}
+
+.btn.btn-secondary{
+    display: flex;
+    border: var(--accent-secondary-color-hover) 3px solid !important;
+    background-color: var(--accent-secondary-color-hover) !important;
+    border-radius: 50px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    min-width: 400px;
+    min-height: 50px;
+    max-height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+    color: white;
+    box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.4);
+
+}
+.btn.btn-primary:hover{
+    background-color: var(--accent-secondary-color-hover) !important;
+    border: var(--accent-secondary-color) 4px solid !important;
+    color: white;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.4);
+}
+.btn-secondary:hover{
+    background-color: var(--accent-secondary-color) !important;
+    border: var(--accent-secondary-color) 4px solid !important;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+
+}
+
+button.card{
+    display: flex;
+    border:  4px solid !important;
+    padding: 3px;
+    color: white;
+}
+
+button.card:hover{
+    transform: scale(1.1);
+    border: var(--accent-secondary-color-hover) 4px solid !important;
+    color: white;
+
+}
+#cardOption{
+    display: block;
+    margin: 0 auto;
+    flex: 1 1 0;
+    min-height: 280px;
+    max-height: 30px;
+    min-width: 300px !important;
+    max-width: 350px !important;
+    transition: all .5s ease-in-out;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: 100;
+}
+#cardOptionInd{
+    display: block;
+    margin: 0 auto;
+    background: url('assets/images/ind.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+}
+#in{
+
+}
+#cardOptionCorp{
+
+}
+
+
+#resourceGroup{
+    display: flex;
+    min-height: 42vh;
+    height: auto;
+    flex-direction: column !important;
+    align-items: center;
+    min-width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+}
+#copyMessage{
+    position: absolute;
+    left: 52%;
+    top: 70%;
+    width: fit-content;
+    border-radius: 10px;
+    background-color:  rgb(0, 63, 0);
+    padding: 3px 18px;
+    box-shadow: 0 0 5px 10px rgba(0, 255, 0, 0.4);
+    color: white;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        min-height: 10vh;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding: 0 2rem;
+        gap: .5rem;
+    }
+    nav > span p {
+        margin: 0;
+        display: none;
+        width: 0;
+    }
+    .contact-badge {
+        min-width: fit-content;
+        width: 0;
+    }
+    nav span {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+    }
+    .cardHero{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: 0 auto;
+        /* height: 100%; */
+        /* max-width: 400px !important; */
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 80vh;
+        margin: 0;
+        padding: 0;
+        background-color: #381B17;
+        line-height: 3rem;
+        user-select: none;
+    }
+    main + span{
+        
+        min-height: 110vh;
+        margin: 0;
+        padding: 0;
+        background-color: #381B17;
+        line-height: 3rem;
+    }
+    div#contactIcons nav{
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+        
+    }
+    main #bizGroup{
+        display: inline-flex;
+        height: auto;
+        flex-direction: column !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #cardHero{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 100%;
+    }
+    #cardOption{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 350px;
+        min-width: 400px !important;
+        max-width: 80vw !important;
+    }
+    span > #cardOption {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 350px;
+        min-width: 400px !important;
+        max-width: 80vw !important;
+    }
+    #resourceGroup{
+        display: flex;
+        height: auto;
+        flex-direction: column !important;
+        flex-wrap: wrap;
+        flex: 1 1 0;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        min-width: 60vw !important;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+   
+    #resourceGroup > div {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem;
+
+    }
+}

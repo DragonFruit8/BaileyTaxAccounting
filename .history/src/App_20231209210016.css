@@ -1,0 +1,317 @@
+@import url("./index.css");
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Add styles for headings */
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-bottom: 8px; */
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-bottom: 6px; */
+}
+
+/* Add styles for paragraphs */
+p {
+    margin-bottom: 0;
+}
+
+/* Add styles for links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header{
+    display: inline-flex;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    text-align: center;
+    min-height: fit-content;
+    height: auto;
+    align-items: center;    
+    justify-content: center;
+    margin: auto 0;
+    z-index: 100;
+}
+
+.contact-badge{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+}
+
+nav{
+    display: inline-flex;
+    width: 100%;
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem auto;
+}
+nav > span{
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    min-height: 36vh;
+    margin: 0 auto;
+    padding: 0;
+    color: #000;
+    background-color: rgb(240, 236, 219);
+    /* line-height: .1rem; */
+}
+
+#about .card{
+    box-shadow: 10px 10px 20px 5px rgb(138, 135, 124);
+}
+/* LOGO IMAGE */
+
+.btaButton{
+    min-width: 275px;
+    min-height: 50px;
+    margin: auto auto;
+    padding: 0;
+    background: url('./assets/logo/BTA_logo.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.contact-badge{
+  display: inline-flex;
+  min-width: 215px;
+  min-height: fit-content;
+  background-color: black;
+  color: white !important;
+}
+
+span:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span:nth-child(2){
+  min-width: max-content;
+  width: 100%;
+  text-align: left;
+}
+span:nth-child(2) > h4, span:nth-child(2) > h5, button.contact-badge > span > p{
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.fa.fa-phone, .fa.fa-envelope, .fa.fa-copy{
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 10%;
+  background-color: #CAAE8A;
+  color: black;
+}
+
+.card-body {
+    display: flex !important;
+    flex: 1 1 100% !important;
+    flex-direction: column !important;
+    min-width: 100%;
+    padding: 9px;
+    text-align: center;
+    align-items: center;
+    text-justify: center;
+    justify-content: center !important;}
+    
+div#cardHero{
+    transform: scale(1);
+    transition: all 800ms ease-in-out;
+    display: flex;
+    position: relative;
+    bottom: -100px;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    max-width: 400px;
+    min-height: 36vh;
+    z-index: 100;
+    padding: 0;
+    margin: 0 auto;
+}
+div#cardHero:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+
+}
+
+/* Sections */
+
+section#service{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    min-height: 36vh;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 9rem; */
+    color: #000;
+    background-color: rgb(240, 236, 219);
+    padding-top: 9rem;
+    line-height: 3rem;
+    z-index: 0;
+    text-align: center;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin: 0 auto;
+    padding: 1vh 0;
+    color: #fff;
+    background-color: rgb(240, 236, 219);
+    /* line-height: .1rem; */
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footerLinks{
+    display: flex;
+    max-width: 80vw;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+/* UTILITY CSS STYLING */
+
+.chunkyLink{
+    min-width: 100px;
+    word-break: normal;
+    trans
+}
+i.fa{
+    cursor: pointer;
+}
+
+
+/* Inspired CODE */
+a.prime:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+      -webkit-transition: none;
+         -moz-transition: none;
+              transition: none;
+  }
+  a.prime:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    
+      -webkit-transition: all 0.4s ease-in-out;
+         -moz-transition: all 0.4s ease-in-out;
+              transition: all 0.4s ease-in-out;
+  }
+  
+  /* Two */
+  a.two {
+    background-repeat: no-repeat;
+    background-position: -120px -120px, 0 0;
+    
+    background-image: -webkit-linear-gradient(
+      top left,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%
+    );
+    background-image: -moz-linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%
+    );    
+    background-image: -o-linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%
+    );
+    background-image: linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%
+    );
+    
+    -moz-background-size: 250% 250%, 100% 100%;
+         background-size: 250% 250%, 100% 100%;
+    
+    -webkit-transition: background-position 0s ease;
+       -moz-transition: background-position 0s ease;       
+         -o-transition: background-position 0s ease;
+            transition: background-position 0s ease;
+  }
+  
+  a.two:hover {
+    background-position: 0 0, 0 0;
+    
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
